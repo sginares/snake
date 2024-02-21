@@ -10,6 +10,12 @@ import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 
 //needs massive aesthetic rewrites
+/**
+ * PlayerSelectScreen class
+ *
+ * @author Silvia Estrella Ginares Pintos
+ * @version v1.0
+ */
 public class PlayerSelectScreen extends JPanel {
 
     JButton go;
@@ -42,6 +48,10 @@ public class PlayerSelectScreen extends JPanel {
         mw.s4.setMaxPlayers(m);
     }
 
+    /**
+     * 
+     * @param mw MainWindow
+     */
     public PlayerSelectScreen(MainWindow mw) {
         this.mw = mw;
 

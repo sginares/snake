@@ -11,11 +11,14 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
+/**
+ * BoardScreen class
+ *
+ * @author Silvia Estrella Ginares Pintos
+ * @version v1.0
+ */
 public class BoardScreen extends JPanel {
 
-    /**
-     *
-     */
     int player = 0;
     BoardDrawing bd;
     JPanel stats;
@@ -47,10 +50,18 @@ public class BoardScreen extends JPanel {
         mw.resetAll();
     }
 
+    /**
+     *
+     * @param m int
+     */
     public void setMaxPlayers(int m) {
         maxPlayers = m;
     }
 
+    /**
+     *
+     * @return maxPlayers
+     */
     public int returnMaxPlayers() {
         return maxPlayers;
     }
@@ -75,6 +86,10 @@ public class BoardScreen extends JPanel {
 
     }
 
+    /**
+     *
+     * @param mw MainWindow
+     */
     public BoardScreen(MainWindow mw) {
         this.mw = mw;
 
@@ -97,7 +112,7 @@ public class BoardScreen extends JPanel {
 
         players = new ArrayList<Player>();
         players.add(new Player(currPlayer));
-        
+
         setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
 
         x = y = 8;

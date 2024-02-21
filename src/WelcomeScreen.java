@@ -10,6 +10,12 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
+/**
+ * WelcomeScreen class
+ *
+ * @author Silvia Estrella Ginares Pintos
+ * @version v1.0
+ */
 public class WelcomeScreen extends JPanel {
 
     private static final String ARE_YOU_SURE = "Are you sure?";
@@ -22,20 +28,34 @@ public class WelcomeScreen extends JPanel {
     JButton quit;
     MainWindow mw;
 
+    /**
+     *
+     * @param t
+     */
     public void setTitle(String t) {
         title.setText(t);
     }
 
+    /**
+     *
+     */
     public void quitButtonActionListener() {
         if (JOptionPane.showConfirmDialog(this, ARE_YOU_SURE) == JOptionPane.OK_OPTION) {
             System.exit(0);
         }
     }
 
+    /**
+     *
+     */
     public void goButtonActionListener() {
         mw.showCard(TWO);
     }
 
+    /**
+     *
+     * @param mw MainWindow
+     */
     public WelcomeScreen(MainWindow mw) {
         this.mw = mw;
 

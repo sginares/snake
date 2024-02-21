@@ -8,6 +8,12 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 //needs massive improvements
+/**
+ * CustomizeBoardScreen class
+ * 
+ * @author Silvia Estrella Ginares Pintos
+ * @version v1.0
+ */
 public class CustomizeBoardScreen extends JPanel {
 
     JButton go;
@@ -22,6 +28,10 @@ public class CustomizeBoardScreen extends JPanel {
         mw.showCard("Four");
     }
 
+    /**
+     * 
+     * @param mw MainWindow
+     */
     public CustomizeBoardScreen(MainWindow mw) {
         this.mw = mw;
 

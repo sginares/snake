@@ -9,6 +9,12 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
+/**
+ * MainWindow class
+ *
+ * @author Silvia Estrella Ginares Pintos
+ * @version v1.0
+ */
 public class MainWindow extends JFrame {
 
     JPanel cards;
